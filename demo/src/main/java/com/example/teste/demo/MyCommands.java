@@ -9,15 +9,6 @@ import com.example.teste.demo.enums.Time;
 @ShellComponent
 public class MyCommands {
 
-	@ShellMethod("Add two or more integers")
-	public int add(int a, @ShellOption(arity = 3) int[] b) {
-		int c = 0;
-		for (int cont : b) {
-			c += cont;
-		}
-		return a + c;
-	}
-
 	@ShellMethod("Tip time and dishes")
 	public String dishes(String day, @ShellOption(arity = 3) int[] dishes) {
 		String response = "";
